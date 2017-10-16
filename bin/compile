@@ -88,8 +88,7 @@ fi
 # Install Bazel inside ${BASE}
 echo "-----> Installing Bazel"
 bash "${BAZEL_INSTALLER}" \
-  --base="${BASE}" \
-  --bazelrc="${HOME}/bazel.bazelrc" \
+  --prefix="${BASE}" \
   --bin="${BASE}/binary" | indent
 echo "-----> Bazel installed"
 
