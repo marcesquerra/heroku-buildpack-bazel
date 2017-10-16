@@ -100,7 +100,7 @@ echo -e "\nbuild --spawn_strategy=standalone --genrule_strategy=standalone" \
 
 # Build app
 echo "-----> Building app"
-BAZEL="${BASE}/bin/bazel --bazelrc=${BUILD_DIR}/bazel.bazelrc"
+BAZEL="${BASE}/bazel/bin/bazel --bazelrc=${BUILD_DIR}/bazel.bazelrc"
 cd $BUILD_DIR
 ${BAZEL} clean
 ${BAZEL} build -c opt $(cat build_path)
