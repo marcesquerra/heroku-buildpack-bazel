@@ -88,8 +88,7 @@ fi
 # Install Bazel inside ${BASE}
 echo "-----> Installing Bazel"
 bash "${BAZEL_INSTALLER}" \
-  --prefix="${BASE}" \
-  --bin="${BASE}/binary" | indent
+  --prefix="${BASE}" | indent
 echo "-----> Bazel installed"
 
 # Custom bazelrc file for Docker
